@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Boka</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul role="list">
+                    <li><a href="../index.html"><h1>Schlättahotellet</h1> </a></li>
+                    <li><a href="#">Konferens</a></li>
+                    <li><a href="#">Resturang</a></li>
+                    <li><a href="#">Hotellrum</a></li>
+                </ul>
+                <a href="#">Boka</a>
+            </nav>
+        </header>
+        <header>Booking form</header>
+        <main> 
+            <form>
+                <form action="process.php" method="POST">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Epost:</label>
+                    <input type="email" id="email" name="email" required><br>
+                  
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date" required><br>
+                  
+                    <label for="time">Tid:</label>
+                    <input type="time" id="time" name="time" required><br>
+                  
+                    <input type="submit" value="Boka">
+                  </form>
+                  
+            </form>
+        </main>
+        <footer>
+            <a href="#">Om oss</a>
+            <a href="#">Mail</a>
+            <a href="#">Frågor</a>
+        </footer>
+    </body>
+</html>
